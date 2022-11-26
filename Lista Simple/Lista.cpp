@@ -34,6 +34,7 @@ void Lista::Burbuja(void)
         {
             if(aux1 > aux2)
             {
+                cout << "Intercambio" << aux1->id << " con " << aux2->id << endl;
                 tmp->Insertar(aux1->dato,aux1->sig,aux1->id,aux1->nombre,aux1->apellido,aux1->frase);
                 aux1->Insertar(aux2->dato,aux2->sig,aux2->id,aux2->nombre,aux2->apellido,aux2->frase);
                 aux2->Insertar(tmp->dato,tmp->sig,tmp->id,tmp->nombre,tmp->apellido,tmp->frase);
