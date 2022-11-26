@@ -36,23 +36,24 @@ void Lista::Burbuja(void)
             if(aux1->id > aux2->id)
             {
                 cout << aux1->id << " es mayor que " << aux2->id << endl;
-                tmp->dato=aux1->dato;
-                tmp->id=aux1->id;
-                tmp->nombre=aux1->nombre;
-                tmp->apellido=aux1->apellido;
-                tmp->frase=aux1->frase;
+                tmp->setDato(aux1->dato);
+                tmp->setId(aux1->id);
+                tmp->setNombre(aux1->nombre);
+                tmp->setApellido(aux1->apellido);
+                tmp->setFrase(aux1->frase);
 
-                aux1->dato=aux2->dato;
-                aux1->id=aux2->id;
-                aux1->nombre=aux2->nombre;
-                aux1->apellido=aux2->apellido;
-                aux1->frase=aux2->frase;
+                aux1->setDato(aux2->dato);
+                aux1->setId(aux2->id);
+                aux1->setNombre(aux2->nombre);
+                aux1->setApellido(aux2->apellido);
+                aux1->setFrase(aux2->frase);
 
-                aux2->dato=tmp->dato;
-                aux2->id=tmp->id;
-                aux2->nombre=tmp->nombre;
-                aux2->apellido=tmp->apellido;
-                aux2->frase=tmp->frase;
+                aux2->setDato(tmp->dato);
+                aux2->setId(tmp->id);
+                aux2->setNombre(tmp->nombre);
+                aux2->setApellido(tmp->apellido);
+                aux2->setFrase(tmp->frase);
+                
 
             }
             aux2=aux2->sig;

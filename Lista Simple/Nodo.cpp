@@ -24,6 +24,67 @@ Nodo::Nodo()
 
 }
 
+void Nodo::setDato(string dato)
+{
+    this->dato=dato;
+}
+
+void Nodo::setSig(Nodo *sig)
+{
+    this->sig=sig;
+}
+
+void Nodo::setId(int id)
+{
+    this->id=id;
+}
+
+void Nodo::setNombre(string nombre)
+{
+    this->nombre=nombre;
+}
+
+void Nodo::setApellido(string apellido)
+{
+    this->apellido=apellido;
+}
+
+void Nodo::setFrase(string frase)
+{
+    this->frase=frase;
+}
+
+string Nodo::getDato(void)
+{
+    return dato;
+}
+
+Nodo* Nodo::getSig(void)
+{
+    return sig;
+}
+
+int Nodo::getId(void)
+{
+    return id;
+}
+
+string Nodo::getNombre(void)
+{
+    return nombre;
+}
+
+string Nodo::getApellido(void)
+{
+    return apellido;
+}
+
+string Nodo::getFrase(void)
+{
+    return frase;
+}
+
+
 
 
 

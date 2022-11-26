@@ -16,6 +16,21 @@ class Nodo
         string apellido;
         string frase;
 
+        void setDato(string);
+        void setSig(Nodo*);
+        void setId(int);
+        void setNombre(string);
+        void setApellido(string);
+        void setFrase(string);
+
+        string getDato(void);
+        Nodo* getSig(void);
+        int getId(void);
+        string getNombre(void);
+        string getApellido(void);
+        string getFrase(void);
+        
+
         Nodo *sig;
 
         bool operator ==(Nodo n);
