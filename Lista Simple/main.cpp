@@ -15,9 +15,6 @@ int main()
     lis->InsertaFinal("B",6,"Max","Rocha","Tengo sueño");
     lis->InsertaFinal("C",9,"Gus","Valdez","Adios");
     lis->InsertaFinal("D",0,"Luis","Garcia","Como estas");
-    lis->InsertaFinal("E",1,"Pedro","Gomez","Buenas noches");
-    lis->InsertaFinal("F",2,"Jair","Orozco","Comida");
-    lis->InsertaFinal("G",4,"Jorge","Gonzalez","Buenos dias");
 
 
 
