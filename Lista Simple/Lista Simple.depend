@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1662685337 source:c:\users\usuario\desktop\lista\lista simple\nodo.cpp
+	"Nodo.h"
+
+1662684813 c:\users\usuario\desktop\lista\lista simple\nodo.h
+
+1663118464 source:c:\users\usuario\desktop\lista\lista simple\lista.cpp
+	"Lista.h"
+
+1663117745 c:\users\usuario\desktop\lista\lista simple\lista.h
+	"Nodo.h"
+	<iostream>
+
+1663118761 source:c:\users\usuario\desktop\lista\lista simple\main.cpp
+	<iostream>
+	"Lista.h"
+
+1664316099 source:d:\documents\codidgos seminario d\lista\lista simple\lista.cpp
+	"Lista.h"
+
+1664307075 d:\documents\codidgos seminario d\lista\lista simple\lista.h
+	"Nodo.h"
+	<iostream>
+
+1662684813 d:\documents\codidgos seminario d\lista\lista simple\nodo.h
+
+1664317526 source:d:\documents\codidgos seminario d\lista\lista simple\main.cpp
+	<iostream>
+	"Lista.h"
+
+1662685337 source:d:\documents\codidgos seminario d\lista\lista simple\nodo.cpp
+	"Nodo.h"
+
+1664509233 source:d:\documents\codigos\lista\lista simple\main.cpp
+	<iostream>
+	"Lista.h"
+
+1664509110 d:\documents\codigos\lista\lista simple\lista.h
+	"Nodo.h"
+	<iostream>
+
+1662684813 d:\documents\codigos\lista\lista simple\nodo.h
+
+1662685337 source:d:\documents\codigos\lista\lista simple\nodo.cpp
+	"Nodo.h"
+
+1664509160 source:d:\documents\codigos\lista\lista simple\lista.cpp
+	"Lista.h"
+
+1664994104 source:d:\downloads\lista\lista simple\lista.cpp
+	"Lista.h"
+
+1664994259 d:\downloads\lista\lista simple\lista.h
+	"Nodo.h"
+	<iostream>
+
+1664993647 d:\downloads\lista\lista simple\nodo.h
+	<iostream>
+
+1664994523 source:d:\downloads\lista\lista simple\main.cpp
+	<iostream>
+	"Lista.h"
+
+1664994523 source:d:\downloads\lista\lista simple\nodo.cpp
+	"Nodo.h"
+
+1664994878 source:c:\users\gustavo\desktop\lista\lista simple\lista.cpp
+	"Lista.h"
+
+1664994259 c:\users\gustavo\desktop\lista\lista simple\lista.h
+	"Nodo.h"
+	<iostream>
+
+1664993647 c:\users\gustavo\desktop\lista\lista simple\nodo.h
+	<iostream>
+
+1664994523 source:c:\users\gustavo\desktop\lista\lista simple\main.cpp
+	<iostream>
+	"Lista.h"
+
+1664994523 source:c:\users\gustavo\desktop\lista\lista simple\nodo.cpp
+	"Nodo.h"
+
