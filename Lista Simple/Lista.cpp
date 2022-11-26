@@ -117,9 +117,9 @@ void Lista::Vacia(void)
     }
 }
 
-void Lista::InsertaInicio(string d)
+void Lista::InsertaInicio(string d,int id,string nombre,string apellido,string frase)
 {
-    Nodo *aux=new Nodo(d,nullptr);
+    Nodo *aux=new Nodo(d,nullptr,id,nombre,apellido,frase);
     if(h==nullptr)
     {
         h=aux;
@@ -131,9 +131,9 @@ void Lista::InsertaInicio(string d)
     }
 }
 
-void Lista::InsertaFinal(string d)
+void Lista::InsertaFinal(string d, int id,string nombre,string apellido,string frase)
 {
-    Nodo *aux=new Nodo(d,nullptr);
+    Nodo *aux=new Nodo(d,nullptr,id,nombre,apellido,frase);
     Nodo *tmp=h;
 
     if (!tmp)
@@ -150,11 +150,11 @@ void Lista::InsertaFinal(string d)
     }
 }
 
-void Lista::InsertarPos(string d,int pos)
+void Lista::InsertarPos(string d,int id,string nombre,string apellido,string frase,int pos)
 {
     Nodo *aux = h;
     Nodo *auxAnt;
-    Nodo *tmp = new Nodo(d,nullptr);
+    Nodo *tmp = new Nodo(d,nullptr,id,nombre,apellido,frase);
 
     if(pos>Tamanio())
     {
@@ -164,10 +164,10 @@ void Lista::InsertarPos(string d,int pos)
     {
         if(pos==1)
         {
-            InsertaInicio(d);
+            InsertaInicio(d,id,nombre,apellido,frase);
         }
         else if (pos==Tamanio()){
-            InsertaFinal(d);
+            InsertaFinal(d,id,nombre,apellido,frase);
         }
         else
         {
@@ -281,6 +281,10 @@ void Lista::Mostrar(void)
         while(tmp)
         {
             cout<<tmp->dato<<", ";
+            cout<<tmp->id<<", ";
+            cout<<tmp->nombre<<", ";
+            cout<<tmp->apellido<<", ";
+            cout<<tmp->frase<<endl;
             tmp=tmp->sig;
         }
         cout<<"\n"<<endl;

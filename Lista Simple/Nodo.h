@@ -8,10 +8,15 @@ class Nodo
 {
     public:
         Nodo();
-        Nodo(string dato, Nodo*,int id);
+        Nodo(string dato, Nodo*,int id,string nombre,string apellido,string frase);
 
         string dato;
         int id;
+        string nombre;
+        string apellido;
+        string frase;
+        
+
         Nodo *sig;
 
         Nodo operator =(Nodo n);

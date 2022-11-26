@@ -20,15 +20,15 @@ class Lista
         void Shell(void);
       /*  Nodo* Quick(Nodo *start = h, Nodo *end = Ultimo());
         Nodo* paritionLast(Nodo *start, Nodo *end);*/
-        void Merge(void);
+
 
 
         //Lista de Operaciones
         void Inicializa(void);
         void Vacia(void);
-        void InsertaInicio(string);
-        void InsertaFinal(string);
-        void InsertarPos(string,int);
+        void InsertaInicio(string,int,string,string,string);
+        void InsertaFinal(string,int,string,string,string);
+        void InsertarPos(string,int,string,string,string,int);
         void Eliminar(string);
         void EliminarTodo(void);
         void Buscar(string);

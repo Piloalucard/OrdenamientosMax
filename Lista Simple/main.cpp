@@ -7,19 +7,21 @@ int main()
 {
     int opc;
     int pos;
-    string dato;
+    int id;
+    string dato,nombre,apellido,frase;
     Lista *lis=new Lista();
 
-    lis->InsertaFinal("1");
-    lis->InsertaFinal("2");
-    lis->InsertaFinal("3");
-    lis->InsertaFinal("4");
-    lis->InsertaFinal("5");
-    lis->InsertaFinal("6");
-    lis->InsertaFinal("7");
-    lis->InsertaFinal("8");
-    lis->InsertaFinal("9");
-    lis->InsertaFinal("10");
+    lis->InsertaFinal("A",767,"Juan","Perez","Hola Mundo");
+    lis->InsertaFinal("B",66,"Max","Rocha","Tengo sueño");
+    lis->InsertaFinal("C",7724,"Gus","Valdez","Adios");
+    lis->InsertaFinal("D",234,"Luis","Garcia","Como estas");
+    lis->InsertaFinal("E",1,"Pedro","Gomez","Buenas noches");
+    lis->InsertaFinal("F",6,"Jair","Orozco","Comida");
+    lis->InsertaFinal("G",790,"Jorge","Gonzalez","Buenos dias");
+
+
+
+
 
     do{
     system("cls");
@@ -55,7 +57,15 @@ int main()
         system("cls");
         cout << "\n  Inserta el Dato :  ";
         cin >> dato;
-        lis->InsertaInicio(dato);
+        cout << "\n  Inserta el ID :  ";
+        cin >> id;
+        cout << "\n  Inserta el Nombre :  ";
+        cin >> nombre;
+        cout << "\n  Inserta el Apellido :  ";
+        cin >> apellido;
+        cout << "\n  Inserta la Frase :  ";
+        cin >> frase;
+        lis->InsertaInicio(dato,id,nombre,apellido,frase);
         cout << "\n";
         system("pause");
         break;
@@ -64,7 +74,15 @@ int main()
         system("cls");
         cout << "\n  Inserta el Dato :  ";
         cin >> dato;
-        lis->InsertaFinal(dato);
+        cout << "\n  Inserta el ID :  ";
+        cin >> id;
+        cout << "\n  Inserta el Nombre :  ";
+        cin >> nombre;
+        cout << "\n  Inserta el Apellido :  ";
+        cin >> apellido;
+        cout << "\n  Inserta la Frase :  ";
+        cin >> frase;
+        lis->InsertaFinal(dato,id,nombre,apellido,frase);
         cout << "\n";
         system("pause");
         break;
@@ -73,9 +91,17 @@ int main()
         system("cls");
         cout<< "\n  Inserta el Dato :  ";
         cin >> dato;
+        cout << "\n  Inserta el ID :  ";
+        cin >> id;
+        cout << "\n  Inserta el Nombre :  ";
+        cin >> nombre;
+        cout << "\n  Inserta el Apellido :  ";
+        cin >> apellido;
+        cout << "\n  Inserta la Frase :  ";
+        cin >> frase;
         cout<< "\n  �En Cual Posicion?  ";
         cin >> pos;
-        lis->InsertarPos(dato,pos);
+        lis->InsertarPos(dato,id,nombre,apellido,frase,pos);
         cout << "\n";
         system("pause");
         break;
@@ -157,7 +183,7 @@ int main()
         break;
     case 15:         //Ordenar Quick
         system("cls");
-        lis->Quick();
+        lis->Burbuja();
         cout << "Lista ordenada!\n";
         lis->Mostrar();
         system("pause");
