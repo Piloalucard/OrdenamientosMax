@@ -34,26 +34,8 @@ void Lista::Burbuja(void)
         {
             if(aux1 < aux2)
             {
-                tmp->dato=aux1->dato;
-                tmp->sig=aux1->sig;
-                tmp->id=aux1->id;
-                tmp->nombre=aux1->nombre;
-                tmp->apellido=aux1->apellido;
-                tmp->frase=aux1->frase;
-
-                aux1->dato=aux2->dato;
                 aux1->sig=aux2->sig;
-                aux1->id=aux2->id;
-                aux1->nombre=aux2->nombre;
-                aux1->apellido=aux2->apellido;
-                aux1->frase=aux2->frase;
-
-                aux2->dato=tmp->dato;
-                aux2->sig=tmp->sig;
-                aux2->id=tmp->id;
-                aux2->nombre=tmp->nombre;
-                aux2->apellido=tmp->apellido;
-                aux2->frase=tmp->frase;
+                aux2->sig=aux1;
 
             }
             aux2=aux2->sig;
