@@ -11,13 +11,13 @@ int main()
     string dato,nombre,apellido,frase;
     Lista *lis=new Lista();
 
-    lis->InsertaFinal("A",767,"Juan","Perez","Hola Mundo");
-    lis->InsertaFinal("B",66,"Max","Rocha","Tengo sueño");
-    lis->InsertaFinal("C",7724,"Gus","Valdez","Adios");
-    lis->InsertaFinal("D",234,"Luis","Garcia","Como estas");
+    lis->InsertaFinal("A",7,"Juan","Perez","Hola Mundo");
+    lis->InsertaFinal("B",6,"Max","Rocha","Tengo sueño");
+    lis->InsertaFinal("C",9,"Gus","Valdez","Adios");
+    lis->InsertaFinal("D",0,"Luis","Garcia","Como estas");
     lis->InsertaFinal("E",1,"Pedro","Gomez","Buenas noches");
-    lis->InsertaFinal("F",6,"Jair","Orozco","Comida");
-    lis->InsertaFinal("G",790,"Jorge","Gonzalez","Buenos dias");
+    lis->InsertaFinal("F",2,"Jair","Orozco","Comida");
+    lis->InsertaFinal("G",4,"Jorge","Gonzalez","Buenos dias");
 
 
 
