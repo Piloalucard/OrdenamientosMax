@@ -34,7 +34,6 @@ void Lista::Burbuja(void)
         {
             if(aux1->id > aux2->id)
             {
-                
                 tmp=aux1;
                 aux1=aux2;
                 aux2=tmp;
