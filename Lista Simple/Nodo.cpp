@@ -24,6 +24,16 @@ Nodo::Nodo()
 
 }
 
+void Nodo::Insert(string dato, Nodo *sig,int id,string nombre,string apellido,string frase)
+{
+    this->dato=dato;
+    this->sig=sig;
+    this->id=id;
+    this->nombre=nombre;
+    this->apellido=apellido;
+    this->frase=frase;
+}
+
 Nodo Nodo::operator =(Nodo n)
 {
     this->dato=n.dato;

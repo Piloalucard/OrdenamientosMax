@@ -34,9 +34,10 @@ void Lista::Burbuja(void)
         {
             if(aux1->id > aux2->id)
             {
-                tmp=aux1;
-                aux1=aux2;
-                aux2=tmp;
+                tmp->Insert(aux1->dato,aux1->sig,aux1->id,aux1->nombre,aux1->apellido,aux1->frase);
+                aux1->Insert(aux2->dato,aux2->sig,aux2->id,aux2->nombre,aux2->apellido,aux2->frase);
+                aux2->Insert(tmp->dato,tmp->sig,tmp->id,tmp->nombre,tmp->apellido,tmp->frase);
+
             }
 
         }

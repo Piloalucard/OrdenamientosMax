@@ -16,6 +16,7 @@ class Nodo
         string apellido;
         string frase;
         
+        void Insert(string dato, Nodo*,int id,string nombre,string apellido,string frase);
 
         Nodo *sig;
 
