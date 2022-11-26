@@ -32,7 +32,7 @@ void Lista::Burbuja(void)
         aux2=aux1->sig;
         while(aux2 != nullptr)
         {
-            if(aux1 > aux2)
+            if(aux1->id > aux2->id)
             {
                 cout << aux1->id << " es mayor que " << aux2->id << endl;
                 Nodo* tmp=new Nodo();
@@ -47,66 +47,8 @@ void Lista::Burbuja(void)
         aux1=aux1->sig;
     }
 }
-/*
 
-Nodo* Lista::paritionLast(Nodo *start, Nodo *end)
-{
-    if (start == end || start == nullptr || end == nullptr)
-        return start;
 
-    Nodo *pivot_prev = start;
-    Nodo *curr = start;
-    Nodo *pivot = end;
-    // iterate till one before the end,
-    // no need to iterate till the end
-    // because end is pivot
-    while (start != end)
-    {
-        if (start < pivot)
-        {
-            // keep tracks of last modified item
-            pivot_prev = curr;
-            Nodo *temp = curr;
-            curr = start;
-            start = temp;
-            curr = curr->sig;
-        }
-        start = start->sig;
-    }
-
-    // swap the position of curr i.e.
-    // next suitable index and pivot
-    Nodo *temp = curr;
-    curr = pivot;
-    end = temp;
-
-    // return one previous to current
-    // because current is now pointing to pivot
-    return pivot_prev;
-}
-
-void Lista::Quick(Nodo *start, Nodo *end)
-{
-    if (start == nullptr || start == end || start == end->sig)
-        return;
-
-    // split list and partition recurse
-    Nodo pivot_prev = paritionLast(start, end);
-    Quick(start, pivot_prev);
-
-    // if pivot is picked and moved to the start,
-    // that means start and pivot is same
-    // so pick from next of pivot
-    if (pivot_prev != nullptr && pivot_prev == start)
-        Quick(pivot_prev->sig, end);
-
-    // if pivot is in between of the list,
-    // start from next of pivot,
-    // since we have pivot_prev, so we move two nodes
-    else if (pivot_prev != nullptr && pivot_prev->sig != nullptr)
-        Quick(pivot_prev->sig->sig, end);
-}
-*/
 void Lista::Vacia(void)
 {
     Nodo *tmp=h;

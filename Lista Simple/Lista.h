@@ -18,8 +18,7 @@ class Lista
         void Insercion(void);
         void Seleccion(void);
         void Shell(void);
-      /*  Nodo* Quick(Nodo *start = h, Nodo *end = Ultimo());
-        Nodo* paritionLast(Nodo *start, Nodo *end);*/
+
 
 
 
