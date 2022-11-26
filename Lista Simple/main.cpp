@@ -32,11 +32,13 @@ int main()
     cout <<"\t6 Eliminar Todo"<< endl;
     cout <<"\t7 Buscar"<< endl;
     cout <<"\t8 Mostrar Todo "<< endl;
-    cout <<"\t9 Tamaño "<< endl;
+    cout <<"\t9 Tamaï¿½o "<< endl;
     cout <<"\t10 Primero"<< endl;
     cout <<"\t11 Ultimo"<< endl;
     cout <<"\t12 Siguiente"<< endl;
     cout <<"\t13 Anterior"<< endl;
+    cout <<"\t14 Ordenar Burbuja"<< endl;
+    cout <<"\t15 Ordenar Quick"<< endl;
     cout <<"\t0 Salir del Programa \n"<< endl;
     cout <<"****************************\n"<<endl;
     cin>>opc;
@@ -71,7 +73,7 @@ int main()
         system("cls");
         cout<< "\n  Inserta el Dato :  ";
         cin >> dato;
-        cout<< "\n  ¿En Cual Posicion?  ";
+        cout<< "\n  ï¿½En Cual Posicion?  ";
         cin >> pos;
         lis->InsertarPos(dato,pos);
         cout << "\n";
@@ -80,7 +82,7 @@ int main()
 
     case 5:         //Eliminar
         system("cls");
-        cout << "\n  ¿Cual dato quieres eliminar? :  ";
+        cout << "\n  ï¿½Cual dato quieres eliminar? :  ";
         cin >> dato;
         lis->Eliminar(dato);
         cout << "\n";
@@ -94,7 +96,7 @@ int main()
 
     case 7:         //Buscar
         system("cls");
-        cout << "\n  ¿Cual es el dato que vas a buscar?:  ";
+        cout << "\n  ï¿½Cual es el dato que vas a buscar?:  ";
         cin>> dato;
         lis->Buscar(dato);
         cout << "\n";
@@ -108,7 +110,7 @@ int main()
         cout << "\n";
         break;
 
-    case 9:         //Tamaño
+    case 9:         //Tamaï¿½o
         system("cls");
         lis->Tamanio();
         system("pause");
@@ -131,7 +133,7 @@ int main()
 
     case 12:         //Siguiente
         system("cls");
-        cout << "\n  ¿De cual dato quieres saber su siguiente?:  ";
+        cout << "\n  ï¿½De cual dato quieres saber su siguiente?:  ";
         cin>> dato;
         lis->Siguiente(dato);
         cout << "\n";
@@ -140,10 +142,24 @@ int main()
 
     case 13:         //Anterior
         system("cls");
-        cout << "\n  ¿De cual dato quieres saber su anterior?:  ";
+        cout << "\n  ï¿½De cual dato quieres saber su anterior?:  ";
         cin>> dato;
         lis->Anterior(dato);
         cout << "\n";
+        system("pause");
+        break;
+    case 14:         //Ordenar Burbuja
+        system("cls");
+        lis->Burbuja();
+        cout << "Lista ordenada!\n";
+        lis->Mostrar();
+        system("pause");
+        break;
+    case 15:         //Ordenar Quick
+        system("cls");
+        lis->Quick();
+        cout << "Lista ordenada!\n";
+        lis->Mostrar();
         system("pause");
         break;
 
