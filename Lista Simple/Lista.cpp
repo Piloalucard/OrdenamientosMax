@@ -43,6 +43,7 @@ void Lista::Burbuja(void)
         aux1=aux1->sig;
     }
 }
+/*
 
 Nodo* Lista::paritionLast(Nodo *start, Nodo *end)
 {
@@ -101,7 +102,7 @@ void Lista::Quick(Nodo *start, Nodo *end)
     else if (pivot_prev != nullptr && pivot_prev->sig != nullptr)
         Quick(pivot_prev->sig->sig, end);
 }
-
+*/
 void Lista::Vacia(void)
 {
     Nodo *tmp=h;
