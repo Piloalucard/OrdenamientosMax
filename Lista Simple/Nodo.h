@@ -18,7 +18,6 @@ class Nodo
 
         Nodo *sig;
 
-        Nodo operator =(Nodo n);
         bool operator ==(Nodo n);
         bool operator !=(Nodo n);
         bool operator >(Nodo n);

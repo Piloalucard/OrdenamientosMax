@@ -25,16 +25,7 @@ Nodo::Nodo()
 }
 
 
-Nodo Nodo::operator =(Nodo n)
-{
-    this->dato=n.dato;
-    this->sig=n.sig;
-    this->id=n.id;
-    this->nombre=n.nombre;
-    this->apellido=n.apellido;
-    this->frase=n.frase;
 
-}
 
 bool Nodo::operator ==(Nodo n)
 {

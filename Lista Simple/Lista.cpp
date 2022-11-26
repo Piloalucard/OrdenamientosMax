@@ -24,7 +24,7 @@ void Lista::Burbuja(void)
 {
     Nodo *aux1;
     Nodo *aux2;
-    Nodo *tmp;
+
 
     aux1=h;
     while(aux1  !=  nullptr)
@@ -32,10 +32,13 @@ void Lista::Burbuja(void)
         aux2=aux1->sig;
         while(aux2 != nullptr)
         {
-            if(aux1 < aux2)
+            if(aux1 > aux2)
             {
-                aux1->sig=aux2->sig;
-                aux2->sig=aux1;
+                cout << aux1->id << " es mayor que " << aux2->id << endl;
+                Nodo* tmp=new Nodo();
+                tmp=aux1;
+                aux1=aux2;
+                aux2=tmp;
 
             }
             aux2=aux2->sig;
