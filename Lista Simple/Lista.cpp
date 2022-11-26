@@ -32,11 +32,12 @@ void Lista::Burbuja(void)
         aux2=aux1->sig;
         while(aux2 != nullptr)
         {
-            if(aux1->id > aux2->id)
+            if(aux1 > aux2)
             {
-                tmp=aux1;
-                aux1=aux2;
-                aux2=tmp;
+                tmp->Insertar(aux1->dato,aux1->sig,aux1->id,aux1->nombre,aux1->apellido,aux1->frase);
+                aux1->Insertar(aux2->dato,aux2->sig,aux2->id,aux2->nombre,aux2->apellido,aux2->frase);
+                aux2->Insertar(tmp->dato,tmp->sig,tmp->id,tmp->nombre,tmp->apellido,tmp->frase);
+
             }
             aux2=aux2->sig;
 
