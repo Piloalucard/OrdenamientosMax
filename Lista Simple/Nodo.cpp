@@ -16,14 +16,14 @@ Nodo::Nodo()
     id=-1;
 }
 
-Nodo::Nodo operator =(Nodo n);
+Nodo Nodo::operator =(Nodo n)
 {
     this->dato=n.dato;
     this->sig=n.sig;
     this->id=n.id;
 }
 
-Nodo::bool operator ==(Nodo n);
+bool Nodo::operator ==(Nodo n)
 {
     if(this-> id == n.id)
     {
@@ -33,7 +33,7 @@ Nodo::bool operator ==(Nodo n);
     
 }
 
-Nodo::bool operator !=(Nodo n);
+bool Nodo::operator !=(Nodo n)
 {
     if(this-> id != n.id)
     {
@@ -42,7 +42,7 @@ Nodo::bool operator !=(Nodo n);
     return false;
 }
 
-Nodo::bool operator >(Nodo n);
+bool Nodo::operator >(Nodo n)
 {
     if(this-> id > n.id)
     {
@@ -51,7 +51,7 @@ Nodo::bool operator >(Nodo n);
     return false;
 }
 
-Nodo::bool operator <(Nodo n);
+bool Nodo::operator <(Nodo n)
 {
     if(this-> id < n.id)
     {

@@ -44,7 +44,63 @@ void Lista::Burbuja(void)
     }
 }
 
+Nodo* Lista::paritionLast(Nodo *start, Nodo *end)
+{
+    if (start == end || start == nullptr || end == nullptr)
+        return start;
 
+    Nodo *pivot_prev = start;
+    Nodo *curr = start;
+    Nodo *pivot = end;
+    // iterate till one before the end,
+    // no need to iterate till the end
+    // because end is pivot
+    while (start != end)
+    {
+        if (start < pivot)
+        {
+            // keep tracks of last modified item
+            pivot_prev = curr;
+            Nodo *temp = curr;
+            curr = start;
+            start = temp;
+            curr = curr->sig;
+        }
+        start = start->sig;
+    }
+
+    // swap the position of curr i.e.
+    // next suitable index and pivot
+    Nodo *temp = curr;
+    curr = pivot;
+    end = temp;
+
+    // return one previous to current
+    // because current is now pointing to pivot
+    return pivot_prev;
+}
+
+void Lista::Quick(Nodo *start, Nodo *end)
+{
+    if (start == nullptr || start == end || start == end->sig)
+        return;
+
+    // split list and partition recurse
+    Nodo pivot_prev = paritionLast(start, end);
+    Quick(start, pivot_prev);
+
+    // if pivot is picked and moved to the start,
+    // that means start and pivot is same
+    // so pick from next of pivot
+    if (pivot_prev != nullptr && pivot_prev == start)
+        Quick(pivot_prev->sig, end);
+
+    // if pivot is in between of the list,
+    // start from next of pivot,
+    // since we have pivot_prev, so we move two nodes
+    else if (pivot_prev != nullptr && pivot_prev->sig != nullptr)
+        Quick(pivot_prev->sig->sig, end);
+}
 
 void Lista::Vacia(void)
 {
@@ -138,7 +194,7 @@ void Lista::Eliminar(string d)
   }
   else
   {
-      while(tmp and band)
+      while(tmp && band)
       {
           if(tmp->dato==d)
           {
@@ -242,7 +298,7 @@ int Lista::Tamanio()
 	return i;
 }
 
-void Lista::Primero()
+Nodo* Lista::Primero()
 {
     Nodo *aux=h;
 
@@ -250,9 +306,10 @@ void Lista::Primero()
         cout <<"El primer dato de la lista es: "<< aux->dato << endl;
     else
         cout << "La lista esta vacia" << endl;
+    return h;
 }
 
-void Lista::Ultimo()
+Nodo* Lista::Ultimo()
 {
     Nodo *aux=h;
 	Nodo *tmp;
@@ -263,6 +320,7 @@ void Lista::Ultimo()
 	}
 
 	cout <<"El ultimo dato de la lista es: "<< tmp->dato << endl;
+    return tmp;
 
 }
 

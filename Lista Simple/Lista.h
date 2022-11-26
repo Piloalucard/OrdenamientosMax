@@ -13,6 +13,15 @@ class Lista
 
         Nodo *h;
 
+        //Ordenamientos
+        void Burbuja(void);
+        void Insercion(void);
+        void Seleccion(void);
+        void Shell(void);
+        Nodo* Quick(Nodo *start = h, Nodo *end = Ultimo());
+        void Merge(void);
+
+
         //Lista de Operaciones
         void Inicializa(void);
         void Vacia(void);
@@ -24,8 +33,8 @@ class Lista
         void Buscar(string);
         void Mostrar(void);
         int Tamanio(void);
-        void Primero(void);
-        void Ultimo(void);
+        Nodo* Primero(void);
+        Nodo* Ultimo(void);
         void Siguiente(string);
         void Anterior(string);
 };
